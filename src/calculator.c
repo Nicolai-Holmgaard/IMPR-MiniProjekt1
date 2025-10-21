@@ -37,7 +37,7 @@ void do_next_op(char operator, double operand, double* akkumulator) {
       }
       break;
     case 'q':
-      exit(1);  
+      exit(0);  
       break;
          
       
