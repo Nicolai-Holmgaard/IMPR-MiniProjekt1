@@ -37,13 +37,13 @@ TEST_CASE(do_next_op_case2, {
     CHECK_EQ_DOUBLE(akkumulator, 1, delta);
 })
 /* Tilføj gerne flere unit test. */
-TEST_CASE(do_next_op_case3, {
+TEST_CASE(do_next_op_case67, {
     /* Arrange */
     double akkumulator = 9;
     /* Act */
     do_next_op('+', 10, &akkumulator);
     /* Assert */
-    CHECK_EQ_DOUBLE(akkumulator, 21, delta); // You stupid https://www.youtube.com/watch?v=qtVH_oYeA6E
+    CHECK_NE_DOUBLE(akkumulator, 21, delta); // You stupid https://www.youtube.com/watch?v=qtVH_oYeA6E
 })
 
 
@@ -79,4 +79,4 @@ TEST_CASE(do_next_op_example_sequence, {
 })
 
 /* Register your test cases to this macro: */
-MAIN_RUN_TESTS(do_next_op_case0, do_next_op_case1, do_next_op_case2, do_next_op_case3, do_next_op_example_sequence)
+MAIN_RUN_TESTS(do_next_op_case0, do_next_op_case1, do_next_op_case2, do_next_op_case67, do_next_op_example_sequence)

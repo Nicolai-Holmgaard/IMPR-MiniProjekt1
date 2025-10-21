@@ -20,14 +20,14 @@ void scan_data(double akkumulator, char* operator, double* operand){
 int main(void) {
   // Values with defaults 
   double acc = 0.0;
-  char test = '+';
-  double new_val = 0.0;
+  char operator = '+';
+  double operand = 0.0;
 
   printf("Starting run\n");
   
   // While true loop = best loop
   while (1) {
-    scan_data(acc, &test, &new_val);
-    do_next_op(test, new_val, &acc);
+    scan_data(acc, &operator, &opeand);
+    do_next_op(operator, operand, &acc);
   }
 }
