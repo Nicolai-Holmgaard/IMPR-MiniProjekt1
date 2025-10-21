@@ -27,7 +27,7 @@ int main(void) {
   
   // While true loop = best loop
   while (1) {
-    scan_data(acc, &operator, &opeand);
+    scan_data(acc, &operator, &operand);
     do_next_op(operator, operand, &acc);
   }
 }
