@@ -21,20 +21,20 @@ TEST_CASE(do_next_op_case0, {
  *************************************************/
 TEST_CASE(do_next_op_case1, {
     /* Arrange */
-
+    double akkumulator = 420;
     /* Act */
-
+    do_next_op('*', 6.7, &akkumulator);
     /* Assert */
-
+    CHECK_EQ_DOUBLE(akkumulator, 2814, delta);
 })
 
 TEST_CASE(do_next_op_case2, {
     /* Arrange */
-
+    double akkumulator = 1;
     /* Act */
-
+    do_next_op('/', 0, &akkumulator);
     /* Assert */
-
+    CHECK_EQ_DOUBLE(akkumulator, 1, delta);
 })
 /* Tilføj gerne flere unit test. */
 
