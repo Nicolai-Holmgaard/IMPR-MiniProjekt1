@@ -23,7 +23,7 @@ int main(void) {
   char operator = '+';
   double operand = 0.0;
 
-  printf("Starting run\n");
+  printf("Starting operation\n");
 
   // While true loop = best loop
   while (1) {
